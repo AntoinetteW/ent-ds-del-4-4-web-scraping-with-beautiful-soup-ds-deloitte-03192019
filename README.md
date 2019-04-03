@@ -1,5 +1,5 @@
 
-# Web Scraping with Beautiful Soup
+# Introducing Web Scraping with Beautiful Soup
 
 ## Introduction
 
