@@ -1,22 +1,23 @@
 
-# An Introduction to Web Scraping and Beautiful Soup
+# Web Scraping with Beautiful Soup
 
 ## Introduction
 
-Now that you've gotten a small taste of web development, it's time to practice reverse engineering and extracting data from the web!
+OK, now that we've seen that web pages are primarily comprised of HTML styled using CSS, the next step is to learn how to scrape information from a website - using the Python library "Beautiful Soup".
 
 ## Objectives
 You will be able to:
-* Load an HTML document
+* Explain what the DOM is
+* Load an HTML document into your Python script
 * Select specific elements from the DOM
 
 ## Web Page Introduction: **The DOM + HTML**
 
 Before starting scraping, let's review the structure of HTML codes.
 
-As you know, "The Document Object Model (DOM) is a programming interface for HTML and XML documents. It represents the page so that programs can change the document structure, style, and content. The DOM represents the document as nodes and objects. That way, programming languages can connect to the page." Amongst other things, this allows programming languages such as javascript to interactively change the page and HTML!  
+The Document Object Model (DOM) is a programming interface for HTML documents. It represents the page so that programs can change the document structure, style, and content. The DOM represents the document as nodes and objects. That way, programming languages can connect to the page. Amongst other things, this allows programming languages such as javascript to interactively change the page and HTML!  
 
-What you'll see is the DOM and HTML create a hierarchy of elements. This structure and the underlying elements can be navigated similar to a family tree which is one of Beautiful Soups main mechanisms for navigation; once you select a specific element within a page you can then navigate to successive elements using methods to retrieve related tags including a tags sibling, parent or descendents.
+The DOM and HTML create a hierarchy of elements. This structure and the underlying elements can be navigated similar to a family tree which is one of Beautiful Soups main mechanisms for navigation; once you select a specific element within a page you can then navigate to successive elements using methods to retrieve related tags including a tags sibling, parent or descendents.
   
 To learn more about the DOM see:  
 https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction
@@ -142,13 +143,9 @@ print(soup.find(id="link3"))
     None
 
 
-## Warnings and Precautions
-
-While web scraping is a powerful tool, it can also lead you into ethical and legal grey areas. To start, it is possible to make hundreds of requests a second to a website. Browsing at superhuman speeds such as this is apt to get noticed. Large volumes of requests such as this are apt to bog down a website's servers and in extreme cases could be considered a denial of service attack. Similarly, any website requiring login may contain information that is thereby not considered public and scraping said websites could leave you in legal jeopardy. Use your best judgment when scraping and exercise precautions. Having your IP address blocked from your favorite website, for example, could prove to be quite an annoyance.
-
 ## Additional Resources
 
-Beautiful soup is the preliminary tool for web scraping. That said, there are more complex examples where you may wish to either scrape larger amounts of data through full-on web crawling, or trickier examples involving javascript. For these and other scenarios, alternative tools such as selenium and scrapy are worth investigating.
+Beautiful soup is a great first tool for web scraping. That said, there are more complex examples where you may wish to either scrape larger amounts of data through full-on web crawling, or trickier examples involving javascript. For these and other scenarios, alternative tools such as selenium and scrapy are worth investigating.
 
 #### Beautiful Soup - a good g- to tool for parsing the DOM
 https://www.crummy.com/software/BeautifulSoup/?
@@ -160,4 +157,5 @@ https://www.seleniumhq.org/
 https://scrapy.org/
 
 ## Summary
-You should now have a brief intro to web scraping! The possibilities are nearly endless with what you can do. That said, be careful, as mentioned.
+
+Now that you've seen the basics of Beautiful Soup, let's get some practice retrieving information from a website and pulling it out into a list or a DataFrame.
