@@ -3,7 +3,7 @@
 
 ## Introduction
 
-OK, now that we've seen that web pages are primarily comprised of HTML styled using CSS, the next step is to learn how to scrape information from a website - using the Python library "Beautiful Soup".
+OK, now that we've seen that web pages are primarily comprised of HTML and styled using CSS, the next step is to learn how to scrape information from a website - using the Python library "Beautiful Soup".
 
 ## Objectives
 You will be able to:
@@ -27,7 +27,7 @@ https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduct
 ## Beautiful Soup   
 https://www.crummy.com/software/BeautifulSoup/bs4/doc/   
 
-Beautiful Soup is a Python library designed for quick scraping projects. It allows you to select and navigate the tree-like structure of HTML documents, searching for particular tags, attributes or ids. It also allows you to then further traverse the HTML documents through relations like children or siblings. In other words, with beautiful soup, you could first select a specific div tag and then search through all of its nested tags.
+Beautiful Soup is a Python library designed for quick scraping projects. It allows you to select and navigate the tree-like structure of HTML documents, searching for particular tags, attributes or ids. It also allows you to then further traverse the HTML documents through relations like children or siblings. In other words, with Beautiful Soup, you could first select a specific div tag and then search through all of its nested tags.
 
 
 ```python
@@ -145,10 +145,10 @@ print(soup.find(id="link3"))
 
 ## Additional Resources
 
-Beautiful soup is a great first tool for web scraping. That said, there are more complex examples where you may wish to either scrape larger amounts of data through full-on web crawling, or trickier examples involving javascript. For these and other scenarios, alternative tools such as selenium and scrapy are worth investigating.
+Beautiful soup is a great first tool for web scraping. That said, there are more complex examples where you may wish to either scrape larger amounts of data through full-on web crawling, or trickier examples involving pages that load the content using javascript. For these and other scenarios, alternative tools such as selenium and scrapy are worth investigating, but they're outside the scope of what we can reasonable cover in this course.
 
-#### Beautiful Soup - a good g- to tool for parsing the DOM
-https://www.crummy.com/software/BeautifulSoup/?
+#### Beautiful Soup - a good go to tool for parsing the DOM
+https://www.crummy.com/software/BeautifulSoup/
 
 #### Selenium - Browser automation (useful when you need to interact with javascript for more complex scraping)
 https://www.seleniumhq.org/
